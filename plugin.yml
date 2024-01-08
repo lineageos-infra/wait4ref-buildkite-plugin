@@ -1,0 +1,7 @@
+name: wait4ref
+description: Waits for git HEAD before git checkout
+author: https://github.com/lineageos-infra
+requirements: []
+configuration:
+  properties: {}
+  additionalProperties: false

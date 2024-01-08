@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+until git ls-remote "${BUILDKITE_REPO}" | grep -q "${BUILDKITE_BRANCH}"; do
+    sleep 10
+done
