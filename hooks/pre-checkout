@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+echo "Waiting for ${BUILDKITE_REPO} @ ${BUILDKITE_COMMIT}"
+
 until git ls-remote "${BUILDKITE_REPO}" | grep -q "${BUILDKITE_COMMIT}"; do
     sleep 10
 done
+
+echo "It's up ^.^"
